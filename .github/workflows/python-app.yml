@@ -1,39 +1,49 @@
-# This workflow will install Python dependencies, run tests and lint with a single version of Python
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
-
-name: Python application
+name: Daily DSA Solution Push
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
-permissions:
-  contents: read
+  schedule:
+    # Runs every day at 09:00 UTC (Adjust UTC time as needed)
+    - cron: '0 9 * * *'
+  workflow_dispatch: # Allows manual trigger from the GitHub Actions UI
 
 jobs:
-  build:
-
+  push-solution:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - name: Set up Python 3.10
-      uses: actions/setup-python@v3
-      with:
-        python-version: "3.10"
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install flake8 pytest
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: Lint with flake8
-      run: |
-        # stop the build if there are Python syntax errors or undefined names
-        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
-        # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
-        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-    - name: Test with pytest
-      run: |
-        pytest
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Find and Commit Next Solution
+        run: |
+          # Configure Git identity for the GitHub Actions bot
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+          # Target file extensions for DSA problems
+          EXTENSIONS="py|cpp|java|js|ts|c|cs|go|rs|md"
+
+          # Find untracked files with target extensions, sort alphabetically, and pick the first one
+          FILE_TO_PUSH=$(git status --porcelain | grep '^??' | awk '{print $2}' | grep -E "\.($EXTENSIONS)$" | sort | head -n 1)
+
+          if [ -z "$FILE_TO_PUSH" ]; then
+            echo "No new solution files found to commit!"
+            exit 0
+          fi
+
+          # Format commit message from filename (e.g., 001_two_sum.py -> Add solution for 001 Two Sum)
+          BASENAME=$(basename "$FILE_TO_PUSH")
+          FILENAME_NO_EXT="${BASENAME%.*}"
+          CLEAN_NAME=$(echo "$FILENAME_NO_EXT" | sed 's/_/ /g')
+
+          echo "Staging file: $FILE_TO_PUSH"
+          git add "$FILE_TO_PUSH"
+
+          COMMIT_MSG="Add solution for $CLEAN_NAME"
+          echo "Committing: $COMMIT_MSG"
+          git commit -m "$COMMIT_MSG"
+
+          echo "Pushing changes back to repository..."
+          git push origin main
