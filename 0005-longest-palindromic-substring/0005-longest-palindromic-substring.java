@@ -1,29 +1,33 @@
 class Solution {
     public String longestPalindrome(String s) {
-        int n = s.length();
-        int start = 0, maxLen = 1;
+        if (s == null || s.length() < 1) return "";
 
-        for (int l = 0; l < n; l++) {
-            for (int r = l + 1; r < n; r++) {
-                // Only check if this substring is longer than our current best
-                if (r - l + 1 > maxLen && identifyPalindrome(s, l, r)) {
-                    start = l;
-                    maxLen = r - l + 1;
+        int start = 0, maxlen = 1;
+        for (int i = 0; i < s.length(); i++) {
+            // Case 1: Odd-length palindrome
+            int left = i - 1;
+            int right = i + 1;
+            while (left >= 0 && right < s.length() && s.charAt(left) == s.charAt(right)) {
+                if (right - left + 1 > maxlen) {
+                    start = left;
+                    maxlen = right - left + 1;
                 }
+                left--;
+                right++;
+            }
+
+            // Case 2: Even-length palindrome
+            left = i;
+            right = i + 1;
+            while (left >= 0 && right < s.length() && s.charAt(left) == s.charAt(right)) {
+                if (right - left + 1 > maxlen) {
+                    start = left;
+                    maxlen = right - left + 1;
+                }
+                left--;
+                right++;
             }
         }
-
-        return s.substring(start, start + maxLen);
-    }
-
-    public boolean identifyPalindrome(String s, int l, int r) {
-        while (l < r) {
-            if (s.charAt(l) != s.charAt(r)) {
-                return false;
-            }
-            l++;
-            r--;
-        }
-        return true;
+        return s.substring(start, start + maxlen);
     }
 }
