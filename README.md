@@ -5,6 +5,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0164-maximum-gap](https://github.com/Nagadivya9515/Strivers_DSA_practice/tree/master/0164-maximum-gap) |
+| [0229-majority-element-ii](https://github.com/Nagadivya9515/Strivers_DSA_practice/tree/master/0229-majority-element-ii) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/Nagadivya9515/Strivers_DSA_practice/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
 | [1431-kids-with-the-greatest-number-of-candies](https://github.com/Nagadivya9515/Strivers_DSA_practice/tree/master/1431-kids-with-the-greatest-number-of-candies) |
 | [1470-shuffle-the-array](https://github.com/Nagadivya9515/Strivers_DSA_practice/tree/master/1470-shuffle-the-array) |
@@ -28,6 +29,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Hash Table
 |  |
 | ------- |
+| [0229-majority-element-ii](https://github.com/Nagadivya9515/Strivers_DSA_practice/tree/master/0229-majority-element-ii) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/Nagadivya9515/Strivers_DSA_practice/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
 | [1512-number-of-good-pairs](https://github.com/Nagadivya9515/Strivers_DSA_practice/tree/master/1512-number-of-good-pairs) |
 ## Math
@@ -37,11 +39,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Counting
 |  |
 | ------- |
+| [0229-majority-element-ii](https://github.com/Nagadivya9515/Strivers_DSA_practice/tree/master/0229-majority-element-ii) |
 | [1512-number-of-good-pairs](https://github.com/Nagadivya9515/Strivers_DSA_practice/tree/master/1512-number-of-good-pairs) |
 ## Sorting
 |  |
 | ------- |
 | [0164-maximum-gap](https://github.com/Nagadivya9515/Strivers_DSA_practice/tree/master/0164-maximum-gap) |
+| [0229-majority-element-ii](https://github.com/Nagadivya9515/Strivers_DSA_practice/tree/master/0229-majority-element-ii) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/Nagadivya9515/Strivers_DSA_practice/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
 ## Counting Sort
 |  |
@@ -59,4 +63,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0164-maximum-gap](https://github.com/Nagadivya9515/Strivers_DSA_practice/tree/master/0164-maximum-gap) |
+## Boyer–Moore Majority Vote Algorithm
+|  |
+| ------- |
+| [0229-majority-element-ii](https://github.com/Nagadivya9515/Strivers_DSA_practice/tree/master/0229-majority-element-ii) |
 <!---LeetCode Topics End-->
