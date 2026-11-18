@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0164-maximum-gap](https://github.com/Nagadivya9515/Strivers_DSA_practice/tree/master/0164-maximum-gap) |
 | [0229-majority-element-ii](https://github.com/Nagadivya9515/Strivers_DSA_practice/tree/master/0229-majority-element-ii) |
+| [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/Nagadivya9515/Strivers_DSA_practice/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/Nagadivya9515/Strivers_DSA_practice/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
 | [1431-kids-with-the-greatest-number-of-candies](https://github.com/Nagadivya9515/Strivers_DSA_practice/tree/master/1431-kids-with-the-greatest-number-of-candies) |
 | [1470-shuffle-the-array](https://github.com/Nagadivya9515/Strivers_DSA_practice/tree/master/1470-shuffle-the-array) |
@@ -25,6 +26,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Matrix
 |  |
 | ------- |
+| [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/Nagadivya9515/Strivers_DSA_practice/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [1672-richest-customer-wealth](https://github.com/Nagadivya9515/Strivers_DSA_practice/tree/master/1672-richest-customer-wealth) |
 ## Hash Table
 |  |
@@ -46,6 +48,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0164-maximum-gap](https://github.com/Nagadivya9515/Strivers_DSA_practice/tree/master/0164-maximum-gap) |
 | [0229-majority-element-ii](https://github.com/Nagadivya9515/Strivers_DSA_practice/tree/master/0229-majority-element-ii) |
+| [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/Nagadivya9515/Strivers_DSA_practice/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/Nagadivya9515/Strivers_DSA_practice/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
 ## Counting Sort
 |  |
@@ -67,4 +70,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0229-majority-element-ii](https://github.com/Nagadivya9515/Strivers_DSA_practice/tree/master/0229-majority-element-ii) |
+## Binary Search
+|  |
+| ------- |
+| [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/Nagadivya9515/Strivers_DSA_practice/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
+## Heap (Priority Queue)
+|  |
+| ------- |
+| [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/Nagadivya9515/Strivers_DSA_practice/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 <!---LeetCode Topics End-->
