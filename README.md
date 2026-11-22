@@ -78,4 +78,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/Nagadivya9515/Strivers_DSA_practice/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
+## Database
+|  |
+| ------- |
+| [0176-second-highest-salary](https://github.com/Nagadivya9515/Strivers_DSA_practice/tree/master/0176-second-highest-salary) |
 <!---LeetCode Topics End-->
