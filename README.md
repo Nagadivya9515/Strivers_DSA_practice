@@ -82,4 +82,16 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0176-second-highest-salary](https://github.com/Nagadivya9515/Strivers_DSA_practice/tree/master/0176-second-highest-salary) |
+## Tree
+|  |
+| ------- |
+| [0671-second-minimum-node-in-a-binary-tree](https://github.com/Nagadivya9515/Strivers_DSA_practice/tree/master/0671-second-minimum-node-in-a-binary-tree) |
+## Depth-First Search
+|  |
+| ------- |
+| [0671-second-minimum-node-in-a-binary-tree](https://github.com/Nagadivya9515/Strivers_DSA_practice/tree/master/0671-second-minimum-node-in-a-binary-tree) |
+## Binary Tree
+|  |
+| ------- |
+| [0671-second-minimum-node-in-a-binary-tree](https://github.com/Nagadivya9515/Strivers_DSA_practice/tree/master/0671-second-minimum-node-in-a-binary-tree) |
 <!---LeetCode Topics End-->
